@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Rafael Henrique de Sousa Vieira">
+  <meta name="keywords"
+    content="programação, html, css, frontend mentor, Interactive card details form, Rafael Henrique de Sousa Vieira, Detalhes de Cartão Interativo, Frontend, Front, end">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="This fun project will be an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test.">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <div class="cards">
+      <div class="front">
+        <img src="/HTML/Detalhes de Cartão Interativo/images/card-logo.svg" alt="card-logo.svg">
+        <p id="card_number">0000 0000 0000 0000</p>
+
+        <div class="name_date">
+          <p id="card_name">Jane Appleseed</p>
+          <div class="card_date">
+            <p id="card_month">00</p>
+            <p>/</p>
+            <p id="card_year">00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="back">
+        <p id="card_cvc">000</p>
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="form">
+        <label for="card_name_form">Cardholder Name</label>
+        <input id="card_name_form" type="text" name="card_name_form" placeholder="e.g. Jane Appleseed">
+        <p id="name_error"></p>
+
+        <label for="card_number_form">Card Number</label>
+        <input type="text" name="card_number_form" id="card_number_form" placeholder="e.g. 1234 5678 9123 0000">
+        <p id="number_error"></p>
+
+        <div class="date_cvc">
+          <div class="date">
+            <label for="card_month_form">Exp. Date (MM/YY)</label>
+            <div class="date_input">
+              <input type="text" name="card_month_form" id="card_month_form" placeholder="MM">
+              <p id="month_error"></p>
+              <input type="text" name="card_year_form" id="card_year_form" placeholder="YY">
+            </div>
+            <p id="date_error"></p>
+          </div>
+
+          <div class="cvc">
+            <label for="card_cvc_form">Cvc</label>
+            <input type="text" name="card_cvc_form" id="card_cvc_form" placeholder="e.g. 123">
+            <p id="cvc_error"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="thank_you hide">
+        <img src="/HTML/Detalhes de Cartão Interativo/images/icon-complete.svg" alt="icon-complete.svg">
+        <h2>Thank You!</h2>
+        <p>We've added your card details</p>
+      </div>
+
+      <input class="btn_primary" type="button" value="Confirm" onclick="verification()">
+
+    </div>
+  </main>
+
+  <footer class=" attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
