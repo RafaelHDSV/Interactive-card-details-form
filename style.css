@@ -38,7 +38,7 @@ main {
 .front {
     display: flex;
     flex-direction: column;
-    background-image: url("/HTML/Detalhes de Cartão Interativo/images/bg-card-front.png");
+    background-image: url("images/bg-card-front.png");
     background-repeat: no-repeat;
     width: 28rem;
     height: 16rem;
@@ -76,7 +76,7 @@ main {
 
 .back {
     position: relative;
-    background-image: url("/HTML/Detalhes de Cartão Interativo/images/bg-card-back.png");
+    background-image: url("images/bg-card-back.png");
     background-repeat: no-repeat;
     width: 28rem;
     height: 16rem;
